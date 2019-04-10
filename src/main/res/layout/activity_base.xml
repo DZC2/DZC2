@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--所有子类的ActionBar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_50"
+        android:background="@color/colorFFFFFF"
+        android:id="@+id/layout_title"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color222222"
+            android:textSize="@dimen/text_16" />
+
+    </RelativeLayout>
+
+    <!--就是加载子类视图的-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_child"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_register_bg"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_36"
+        android:layout_marginRight="@dimen/layout_36"
+        android:layout_marginTop="@dimen/layout_160"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_50">
+
+            <EditText
+                android:id="@+id/login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_phone"
+                android:drawablePadding="@dimen/layout_10"
+                android:hint="手机号"
+                android:paddingLeft="@dimen/layout_10"
+                android:textColor="@color/colorFFFFFF"
+                android:textColorHint="@color/colorFFFFFF"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorFFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_50"
+            android:layout_marginTop="@dimen/layout_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/login_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/login_lock"
+                    android:drawablePadding="@dimen/layout_10"
+                    android:hint="密码"
+                    android:paddingLeft="@dimen/layout_10"
+                    android:textColor="@color/colorFFFFFF"
+                    android:textColorHint="@color/colorFFFFFF" />
+
+                <ImageView
+                    android:id="@+id/login_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/login_eye" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorFFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_20">
+
+            <CheckBox
+                android:id="@+id/save_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:textColor="@color/colorFFFFFF" />
+
+            <TextView
+                android:id="@+id/go_rigister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="快速注册"
+                android:textColor="@color/colorFFFFFF"
+                android:textSize="@dimen/text_14" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/layout_120"
+            android:background="@drawable/login_bg"
+            android:text="登录"
+            android:textColor="@color/colorFF5F71"
+            android:textSize="@dimen/text_18" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
